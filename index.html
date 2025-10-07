@@ -14,37 +14,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
-<header class="navbar-fixed shadow-sm bg-white">
-  <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
 
     <!-- Left: Logo -->
-    <div class="logo flex-grow-1 text-start">
-      <h1 class="m-0 fw-bold text-success" style="font-size: 1.6rem;">
-        Mr. Yogesh Bhila Patil
-      </h1>
-    </div>
+    <a class="navbar-brand fw-bold text-success" href="#" style="font-size: 1.4rem;">
+      Mr. Yogesh Bhila Patil
+    </a>
 
+    <!-- Toggler Button (Hamburger on Mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Right: Navigation -->
-    <nav class="text-end">
-      <ul class="nav-list d-flex list-unstyled m-0">
-        <li><a href="#home" class="nav-link px-3 text-dark fw-semibold">Home</a></li>
-        <li><a href="#about" class="nav-link px-3 text-dark fw-semibold">About</a></li>
-        <li><a href="#books" class="nav-link px-3 text-dark fw-semibold">Book</a></li>
-        <li><a href="#contact" class="nav-link px-3 text-dark fw-semibold">Contact</a></li>
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Navigation Links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="#home" class="nav-link fw-semibold">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link fw-semibold">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#books" class="nav-link fw-semibold">Book</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link fw-semibold">Contact</a>
+        </li>
       </ul>
-    </nav>
 
-    <!-- Center: Date & Time -->
-    <div id="date-time" class="text-secondary fw-semibold me-auto ms-3" 
-         style="font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: #ff8800;">
-      <!-- JS will insert date & time here -->
+      <!-- Date & Time -->
+      <span id="date-time" class="navbar-text text-secondary fw-semibold ms-lg-3"
+        style="font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: #ff8800;">
+        <!-- JS inserts date & time here -->
+      </span>
     </div>
-
   </div>
 </header>
+
 
 
 <section id="home" class="hero d-flex align-items-center justify-content-center text-center" 
