@@ -25,16 +25,16 @@
       Mr. Yogesh Bhila Patil
     </a>
 
-    <!-- Toggler Button (Hamburger on Mobile) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <!-- Toggler Button (Hamburger on Mobile - stays at right) -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Collapsible Menu -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <!-- Navigation Links -->
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <!-- Navigation Links (aligned to right) -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a href="#home" class="nav-link fw-semibold" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
         </li>
@@ -49,8 +49,8 @@
         </li>
       </ul>
 
-      <!-- Date & Time (hidden on small screens, shown on lg) -->
-      <span id="date-time" class="navbar-text text-secondary fw-semibold ms-lg-3 d-none d-lg-inline"
+      <!-- Date & Time -->
+      <span id="date-time" class="navbar-text fw-semibold ms-lg-3 d-none d-lg-inline"
         style="font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: #ff8800;">
         <!-- JS inserts date & time here -->
       </span>
