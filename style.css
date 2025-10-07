@@ -216,6 +216,120 @@ nav li a:hover, nav li a.active {
         margin-top: 30px;
     }
 }
+
+
+
+
+ .inspiration-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+
+   .inspiration-section {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #f7f9fc, #e3f2fd);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0d47a1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Intro Paragraph */
+  .intro-text {
+    font-size: 1.15rem;
+    color: #333;
+    max-width: 850px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+  }
+
+  /* Card Box */
+  .inspiration-content {
+    display: inline-block;
+    max-width: 650px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .inspiration-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  }
+
+  /* Heading above Image */
+  .person-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1565c0;
+  }
+
+  /* Image Styling */
+  .image-wrapper {
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+
+  .person-image {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+  }
+
+  .person-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Marathi Quote */
+  .quote-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #444;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+
+
+
+.quote-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .quote-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  }
+
 /* ... (Rest of CSS code after .about-section) ... */
 #about {
   animation: fadeInUp 1s ease;
@@ -375,41 +489,6 @@ footer {
     padding: 20px;
     font-size: 0.9em;
 }
-/* ABOUT EMPLOYER SECTION */
-.employer-section {
-    background-color: #fff3e0; /* warm light orange background */
-    color: #333;
-    text-align: left;
-    padding: 80px 20px; /* Ensure padding is set */
-}
-
-/* ... (other employer-section styles) ... */
-
-.employer-section img {
-    /* ⚠️ KEY CHANGES BELOW: Increase the logo size */
-    width: 100%; /* Make it responsive within its column */
-    max-width: 250px; /* Set a larger maximum width */
-    height: auto;
-    
-    border-radius: 30px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    margin-bottom: 20px; /* Add space below the image */
-}
-
-/* Responsive alignment for smaller devices */
-@media (max-width: 768px) {
-    .employer-section {
-        text-align: center;
-    }
-    .employer-section .employer-text {
-        max-width: 100%;
-    }
-    /* Optional: Slightly reduce logo size on very small screens if needed */
-    .employer-section img {
-        max-width: 200px; 
-    }
-}
-
 
 
 /* ANIMATIONS */
