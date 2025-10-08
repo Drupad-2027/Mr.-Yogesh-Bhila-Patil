@@ -1006,3 +1006,10 @@ img {
   border-color: #4CAF50;
   box-shadow: 0 0 6px rgba(76,175,80,0.2);
 }
+html {
+  scroll-behavior: smooth; /* smooth scrolling effect */
+}
+
+section {
+  scroll-margin-top: 80px; /* adjust based on navbar height */
+}
