@@ -1016,7 +1016,9 @@ section {
 @media (max-width: 768px) {
   #home {
     min-height: 100vh !important;
-    background-size: cover !important; /* fills screen better on mobile */
+    background-size: contain !important; /* shows full image instead of zoomed */
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
     padding-top: 100px !important;
     padding-bottom: 100px !important;
   }
