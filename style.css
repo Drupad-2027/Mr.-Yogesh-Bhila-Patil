@@ -1006,17 +1006,3 @@ img {
   border-color: #4CAF50;
   box-shadow: 0 0 6px rgba(76,175,80,0.2);
 }
-@media (max-width: 991px) {
-  #navbarNav {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 10px;
-  }
-  .navbar-toggler {
-    border-color: #28a745;
-  }
-  .navbar-toggler-icon {
-    background-color: #28a745;
-    border-radius: 3px;
-  }
-}
