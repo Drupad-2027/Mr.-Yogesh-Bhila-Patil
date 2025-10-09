@@ -8,7 +8,7 @@
 /* ---------------------------------------------------- */
 header {
     width: 100%;
-    height: 80px; /* Fixed height for the navigation bar */
+    height: 60px; /* Fixed height for the navigation bar */
     background: linear-gradient(90deg, #e8f5e9 0%, #ffffff 45%, #e3f2fd 100%);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-size: 20px;
@@ -98,11 +98,25 @@ nav li a:hover, nav li a.active {
 /* HERO SECTION (New full-image background) */
 /* ---------------------------------------------------- */
 .hero {
-    /* Use the same background image as the new UI */
+    /* Safe and reliable background for all devices */
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-        url("YogeshUncle/Untitled-design-10.png") center top / cover no-repeat;
-    height: 80vh;
+        url("https://drupad-2027.github.io/YogeshUncle/India%20Map_Final.jpg") top center / cover no-repeat;
+    min-height: 100vh;              /* use min-height instead of height */
+    background-attachment: scroll;  /* prevents iOS rendering bug */
+    background-color: #f5f5f5;
 }
+
+/* Optional: ensure proper scaling on mobile screens */
+@media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url("https://drupad-2027.github.io/YogeshUncle/India%20Map_Final.jpg") center top / contain no-repeat;
+        min-height: 100vh;
+        padding: 100px 20px;
+        background-attachment: scroll;
+    }
+}
+
 
 .hero-content {
     text-align: center;
