@@ -1,993 +1,1060 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Author Yogesh - When I Was Me?</title>
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-    >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css" />
-
-</head>
-
-
-
-
-<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-  <div class="container">
-    <!-- Left: Logo -->
-    <a class="navbar-brand fw-bold text-success" href="#home" style="font-size: 1.4rem;">
-      Mr. Yogesh Bhila Patil
-    </a>
-
-    <!-- Toggler Button -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible Menu -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a href="#home" class="nav-link fw-semibold">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link fw-semibold">About</a></li>
-        <li class="nav-item"><a href="#books" class="nav-link fw-semibold">Book</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link fw-semibold">Contact</a></li>
-      </ul>
-
-      <!-- Date & Time -->
-      <span id="date-time" class="navbar-text fw-semibold ms-lg-3 d-none d-lg-inline"
-        style="font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: #ff8800;">
-      </span>
-    </div>
-  </div>
-</header>
-
-
-
-
-<section id="home" class="hero d-flex flex-column align-items-center justify-content-center text-center"
-         style="min-height:100vh; position:relative; font-family: Verdana, Geneva, sans-serif;
-                background-image:url('YogeshUncle/India%20Map_Final.jpg');
-                background-size:cover;
-                background-position:center top;
-                background-repeat:no-repeat;
-                background-color:#f5f5f5;
-                padding:120px 20px;">
-
-    <!-- Overlay -->
-    <div style="position:absolute; top:0; left:0; width:100%; height:100%;
-                background:rgba(0,0,0,0.55); z-index:1;"></div>
-
-    <!-- Content -->
-    <div class="hero-content container text-white" 
-         style="margin-top:5px; position:relative; z-index:2;">
-
-        <!-- Subtitle -->
-        <p class="subtitle text-uppercase mb-3 fw-semibold" 
-           style="letter-spacing:2px; font-size:1rem; line-height:1.6; animation:fadeInDown 1s;">
-            IF THIS BOOK TOUCHES EVEN ONE LIFE, THEN EVERY STRUGGLE HAS FOUND ITS MEANING
-        </p>
-
-        <!-- Title -->
-        <h2 class="fw-bold mb-4" style="animation:fadeInUp 1.2s; font-size:2.3rem;">
-            When I Was Me?
-        </h2>
-
-        <!-- Description -->
-        <p class="description mx-auto mb-4 lead" 
-           style="max-width:650px; font-size:1rem; line-height:1.6; animation:fadeInUp 1.5s;">
-            <strong>
-                Little Wild Wonders is a collection of soulful short stories inspired by the Bhagavad Gita,
-                where animals and nature teach timeless values of kindness, truth, and wisdom — making it a
-                perfect read for children and parents alike.
-            </strong>
-        </p>
-
-        <!-- CTA Button -->
-        <a href="#book-available" class="btn shadow-lg fw-bold" 
-           style="border-radius:50px; background:#28a745; color:#fff; font-size:1rem;
-                  padding:12px 36px; animation:fadeInUp 1.8s; border:none;">
-            BUY BOOK NOW
-        </a>
-    </div>
-</section>
-
-
-
-
-<!-- ABOUT SECTION -->
-<section id="about" class="about-section py-5" 
-         style="background: linear-gradient(135deg, #e6f0ff 0%, #fef6ff 100%); position: relative; overflow: hidden; font-family: Verdana, sans-serif;">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <!-- Author Image Slideshow -->
-      <div class="col-lg-5 text-center">
-        <div id="authorCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden border border-light" 
-             data-bs-ride="carousel" 
-             style="backdrop-filter: blur(6px); background-color: rgba(255,255,255,0.8); max-height: 620px;">
-          
-          <div class="carousel-inner" style="height: 100%;">
-            <!-- Example Slide -->
-            <div class="carousel-item active text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                <!-- Title empty for first image -->
-              </div>
-              <img src="YogeshUncle/Untitled-design-30.png" 
-                   class="d-block w-100" 
-                   alt="Author Image 1" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Guardians
-              </div>
-              <img src="YogeshUncle/Guardians.jpg" 
-                   class="d-block w-100" 
-                   alt="Author Image 2" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Aai Aanna
-              </div>
-              <img src="YogeshUncle/AaiAanna.jpg" 
-                   class="d-block w-100" 
-                   alt="Author Image 3" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Kaka kaku
-              </div>
-              <img src="YogeshUncle/Kakakaku(new).jpeg" 
-                   class="d-block w-100" 
-                   alt="Author Image 4" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Regards
-              </div>
-              <img src="YogeshUncle/Regards.jpeg" 
-                   class="d-block w-100" 
-                   alt="Author Image 5" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Friends
-              </div>
-              <img src="YogeshUncle/Friends.jpg" 
-                   class="d-block w-100" 
-                   alt="Author Image 6" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Dada Didi
-              </div>
-              <img src="YogeshUncle/Dada Didi.jpeg" 
-                   class="d-block w-100" 
-                   alt="Author Image 7" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Dada Akka
-              </div>
-              <img src="YogeshUncle/DadaAkka.jpeg" 
-                   class="d-block w-100" 
-                   alt="Author Image 8" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Dada Tai
-              </div>
-              <img src="YogeshUncle/Dada-Tai.jpeg" 
-                   class="d-block w-100" 
-                   alt="Author Image 9" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-
-            <div class="carousel-item text-center">
-              <div class="py-2" style="color: red; font-weight: bold; font-size: 1.1rem;">
-                Catch Me If You Can
-              </div>
-              <img src="YogeshUncle/Catch Me If You Can.jpeg" 
-                   class="d-block w-100" 
-                   alt="Author Image 10" 
-                   style="height: 560px; width: 100%; object-fit: contain; object-position: center; background-color: #fff;">
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#authorCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#authorCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Author Info -->
-      <div class="col-lg-7">
-        <div class="bg-white bg-opacity-75 rounded-4 shadow-lg p-5" 
-             style="backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.6);">
-          
-          <h2 class="fw-bold mb-3" style="color: #2a4d8f;">
-            About the Author
-          </h2>
-
-          <p class="lead" style="color: #444;">
-            Mr. <strong>Yogesh Bhila Patil</strong> 
-            (<em>B.E. Mechanical & IMBA in Project Management</em>)  
-            is a dedicated professional whose technical foundation and creative passion 
-            blend to inspire personal and professional growth. His life values define his 
-            journey and his purpose as a writer and leader.
-          </p>
-
-          <!-- Core Beliefs -->
-          <h4 class="mt-4 text-success fw-semibold">Core Beliefs</h4>
-          <ul class="values-list mb-4" style="list-style-type: none; padding-left: 0;">
-            <li>1. Work Hard, be prompt & express yourself!</li>
-            <li>2. Someone must love you!</li>
-            <li>3. Believe in Yourself!</li>
-            <li>4. Never Quit!</li>
-          </ul>
-
-          <!-- Education -->
-          <h4 class="mt-4 text-success fw-semibold">Educational Journey</h4>
-          <ul class="education mb-4" style="list-style-type: square; padding-left: 20px; color: #444;">
-            <li>Primary: Ramnath Hiralal Jaju Vidyalaya, Erandol</li>
-            <li>Secondary: R.T.K.V. Erandol</li>
-            <li>Higher Secondary: Jai Hind Junior College, Dhule & DDSP College, Erandol</li>
-            <li>Engineering: P.R.E.C. Loni, Pune University</li>
-            <li>IMBA: Ulyanovsk University, Russia (via Jaro Education)</li>
-          </ul>
-          <p class="mb-3" style="font-size: 1.05em; color: #555;">
-            <strong>Currently:</strong> Senior Media Planner at an AdTech company.
-          </p>
-
-          <!-- Published Article -->
-          <h4 class="mt-4 text-success fw-semibold">Published Article</h4>
-          <p class="mb-0" style="font-size: 1.05em;">
-            In 2018, his article 
-            <em>“Project Crashing Using Critical Path Method”</em> 
-            was published by the 
-            <strong>Project Management Institute (PMI)</strong>.
-          </p>
-          <a href="https://www.projectmanagement.com/articles/488449/Project-Crashing-Using-Critical-Path-Method"
-             target="_blank" 
-             class="btn btn-primary btn-sm mt-3 shadow-sm px-3 py-2 rounded-pill">
-              Read Article
-          </a>
-
-          <!-- Work History -->
-          <h4 class="mt-4 text-success fw-semibold">Work History</h4>
-          <ul class="mb-0" style="list-style-type: disc; padding-left: 20px; color: #444;">
-            <li>More than 15 years of experience.</li>
-            <li>Overseas Travel: Scotland and Qatar.</li>
-            <li>Currently: Senior Media Planner at an AdTech company.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Quotes Section -->
-<section class="quotes-section py-5" 
-         style="background: linear-gradient(135deg, #f8fbff, #eef2f3); position: relative; overflow: hidden;">
-
-  <!-- Decorative background shapes -->
-  <div style="position: absolute; top: -80px; left: -80px; width: 180px; height: 180px; 
-              background: rgba(52, 152, 219, 0.08); border-radius: 50%;"></div>
-  <div style="position: absolute; bottom: -100px; right: -100px; width: 250px; height: 250px; 
-              background: rgba(46, 204, 113, 0.08); border-radius: 50%;"></div>
-
-  <div class="container position-relative text-center" style="z-index: 2;">
-    <!-- Section Heading -->
-    <h2 class="fw-bold mb-5" 
-        style="font-size: 2.4rem; color: #2c3e50; letter-spacing: 1px; font-family: 'Poppins', sans-serif;">
-      <img src="YogeshUncle/pen.jpeg" alt="Pen Icon" style="width: 50px; margin-right: 10px; vertical-align: middle;">
-      Inspiring Quotes
-    </h2>
-
-    <div class="row g-4 justify-content-center">
-
-      <!-- Quote 1 -->
-      <div class="col-md-5">
-        <div class="quote-card p-4 rounded-4 bg-white shadow-sm h-100 d-flex align-items-center justify-content-center">
-          <p class="fst-italic mb-0 text-center" 
-             style="font-size: 1.15rem; color: #34495e; line-height: 1.8;">
-            “रब आख़ीर रब हैं तू; तुज़से शिकायत नहीं |”
-          </p>
-        </div>
-      </div>
-
-      <!-- Quote 2 -->
-      <div class="col-md-5">
-        <div class="quote-card p-4 rounded-4 bg-white shadow-sm h-100 d-flex align-items-center justify-content-center">
-          <p class="fst-italic mb-0 text-center" 
-             style="font-size: 1.15rem; color: #34495e; line-height: 1.8;">
-            “Future Belongs to Those; Who Dare!”
-          </p>
-        </div>
-      </div>
-
-      <!-- Quote 3 -->
-      <div class="col-md-5">
-        <div class="quote-card p-4 rounded-4 bg-white shadow-sm h-100 d-flex align-items-center justify-content-center">
-          <p class="fst-italic mb-0 text-center" 
-             style="font-size: 1.1rem; color: #34495e; line-height: 1.9;">
-            “छोड़ दिये उन गलियोंको, समझ गये हम मंजिल नहीं उन रास्तों पे.<br>
-            पलटना नामुमकिन था, चल दिये किसी और गलियारे से.”
-          </p>
-        </div>
-      </div>
-
-      <!-- Quote 4 -->
-      <div class="col-md-5">
-        <div class="quote-card p-4 rounded-4 bg-white shadow-sm h-100 d-flex align-items-center justify-content-center">
-          <p class="fst-italic mb-0 text-center" 
-             style="font-size: 1.1rem; color: #34495e; line-height: 1.9;">
-            “अकेले हैं तन्हाइयोंमें, दोस्तोंकी मौजीदगीमें.<br>
-            कहा गए वह दोस्त? जो सुंग लेते थे तन्हाईयोंको.”
-          </p>
-        </div>
-      </div>
-
-      <!-- Quote 5 (Full Width) -->
-      <div class="col-10">
-        <div class="quote-card p-5 rounded-4 bg-white shadow-sm h-100 text-center">
-          <p class="fst-italic mb-0 text-center" 
-             style="font-size: 1.2rem; color: #2c3e50; line-height: 1.9; font-weight: 500;">
-            “ही जवळीक आणि तू , तू आणि, आणि मी.<br>
-            प्रेमाच्या पुढे कोण? सांग तू ...<br>
-            प्रेमाच्या सोबत मी, मी आणि तू ...”
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- BOOK SECTION -->
-<section id="books" class="books-section py-5" 
-         style="background: linear-gradient(135deg, #eaf3ff 0%, #fff9f9 100%); position: relative; overflow: hidden; font-family: Verdana, sans-serif;">
-
-  <!-- Decorative gradient shapes -->
-  <div class="book-bg-shape-1"></div>
-  <div class="book-bg-shape-2"></div>
-
-  <div class="container text-center position-relative" style="z-index: 2;">
-
-    <!-- Heading -->
-    <h2 class="mb-5 fw-bold" 
-        style="color:#244b9b; letter-spacing: 1px; font-size: 2.3rem;">
-      ✨ About the Book
-    </h2>
-
-    <!-- Book Card -->
-    <div class="book-card p-5 mx-auto shadow-lg rounded-4 bg-white bg-opacity-75" 
-         style="max-width: 950px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.6); animation: fadeInUp 1.2s ease;">
-
-      <!-- Book Image -->
-      <div class="book-image-container mb-4 position-relative">
-        <img src="YogeshUncle/UPLOAD_MOCKUP-Aman-Sharma-2.png" 
-             alt="When I Was Me?" 
-             class="img-fluid mb-4 rounded-4 shadow-lg book-cover" 
-             style="max-height: 750px; object-fit: contain; border: 8px solid #fff; 
-                    transition: transform 0.5s ease, box-shadow 0.5s ease;">
-      </div>
-
-      <!-- Title -->
-      <h3 class="fw-bold mb-2" style="color: #222; font-size: 1.9rem;">
-        When I Was Me? 
-        <small class="text-muted fst-italic d-block" style="font-size: 1rem;">
-          (Based on true incidents)
-        </small>
-      </h3>
-
-      <!-- Description -->
-      <p class="text-start mx-auto" 
-         style="max-width: 760px; font-size: 1.05em; color: #444; line-height: 1.9;">
-        <strong>“When I Was Me?”</strong> based on true incidents…  
-        This book is dedicated to my son <strong>‘J’</strong> and his generation for their coming future.  
-        An autobiography to reach someone out there who needs the same support he once longed for.  
-        If even one soul finds strength through his journey; then every struggle he endured would have found its true purpose.  
-        He believes life is not always about chasing the big dreams but cherishing the small blessings around us.  
-        Those simple yet precious moments with his son <strong>‘J’</strong> became the foundation of his strength.  
-        <br><br>
-        He wants to share one message with the world — <em>‘Acceptance and Moving Forward.’</em>  
-        Life may leave many questions unanswered; but the secret is to focus on what lies ahead rather than what is left behind.  
-        Through this book, he wishes to inspire those who have fallen to rise again and rewrite their destiny.  
-        He has navigated through the highs and lows of life with resilience and courage.  
-        He believes that life always gives a second chance to those who refuse to quit, no matter how hard life knocks them down.  
-        <br><br>
-        The writing style is clear and uncomplex, simple and engaging — making it highly resonating and connecting to the audience.  
-        Also, this book is full of knowledge and information.
-      </p>
-
-      <!-- Quote Highlight -->
-      <blockquote class="quote fst-italic border-start border-4 border-primary ps-4 mt-4 text-start mx-auto"
-                  style="color:#222; font-size: 1.1em; max-width: 700px;">
-        “If you ever find yourself wondering, <strong>‘When I was me?’</strong>  
-        know that you are not alone!”
-      </blockquote>
-
-      <!-- Book Details Row -->
-      <div class="row text-center mt-5">
-        <div class="col-md-4 border p-3">
-          <i class="bi bi-calendar-event" style="font-size: 1.5rem; color:#244b9b;"></i>
-          <p class="mb-1 fw-bold text-uppercase" style="font-size: 0.85rem; letter-spacing: 1px;">Publication Date</p>
-          <p style="font-size: 0.95rem; color:#333;">3 June 2025</p>
-        </div>
-        <div class="col-md-4 border p-3">
-          <i class="bi bi-building" style="font-size: 1.5rem; color:#244b9b;"></i>
-          <p class="mb-1 fw-bold text-uppercase" style="font-size: 0.85rem; letter-spacing: 1px;">Publishers</p>
-          <p style="font-size: 0.95rem; color:#333;">BlueRose Publishers Pvt. Ltd.</p>
-        </div>
-        <div class="col-md-4 border p-3">
-          <i class="bi bi-book" style="font-size: 1.5rem; color:#244b9b;"></i>
-          <p class="mb-1 fw-bold text-uppercase" style="font-size: 0.85rem; letter-spacing: 1px;">Page Length</p>
-          <p style="font-size: 0.95rem; color:#333;">116 pages</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- WHY READ THIS BOOK SECTION -->
-<section id="why-read" class="py-5 position-relative" 
-         style="background: lightblue; overflow: hidden;">
-  <div class="container text-center">
-
-    <!-- Section Heading -->
-    <h2 class="fw-bold mb-4" 
-        style="color: #1b7a2e; font-family: 'Poppins', sans-serif; letter-spacing: 0.5px;">
-      🌿 Why Read <span style="color:#2a4d8f;">This Book?</span>
-    </h2>
-
-    <!-- Short Intro -->
-    <p class="text-muted mb-5" style="max-width: 750px; margin: 0 auto; font-size: 1.1em;">
-      Every page of <strong>“When I Was Me?”</strong> is a mirror to the soul — a journey of truth, 
-      transformation, and triumph. Discover how one man turned pain into purpose, and 
-      why his story continues to inspire readers worldwide.
-    </p>
-
-    <!-- Feature List -->
-    <div class="row justify-content-center text-start">
-
-      <div class="col-md-10 col-lg-8">
-        <div class="why-read-item d-flex align-items-start mb-4 p-4 bg-white rounded-4 shadow-sm"
-             style="transition: all 0.3s ease;">
-          <div class="icon-circle bg-success bg-opacity-10 text-success rounded-circle me-3 d-flex align-items-center justify-content-center"
-               style="width: 50px; height: 50px; font-size: 1.5em; box-shadow: 0 0 10px rgba(0,128,0,0.1);">
-            <i class="fas fa-heartbeat"></i>
-          </div>
-          <div>
-            <h5 class="fw-semibold mb-1 text-success">A True Story of Resilience</h5>
-            <p class="mb-0 text-secondary">
-              Experience the raw honesty of a man who fought through stigma and setbacks, 
-              yet found courage and love in his journey.
-            </p>
-          </div>
-        </div>
-
-        <div class="why-read-item d-flex align-items-start mb-4 p-4 bg-white rounded-4 shadow-sm"
-             style="transition: all 0.3s ease;">
-          <div class="icon-circle bg-success bg-opacity-10 text-success rounded-circle me-3 d-flex align-items-center justify-content-center"
-               style="width: 50px; height: 50px; font-size: 1.5em; box-shadow: 0 0 10px rgba(0,128,0,0.1);">
-            <i class="fas fa-users"></i>
-          </div>
-          <div>
-            <h5 class="fw-semibold mb-1 text-success">A Voice for the Voiceless</h5>
-            <p class="mb-0 text-secondary">
-              For everyone who has ever felt unheard — this story reminds you that your voice 
-              matters and your truth deserves to be seen.
-            </p>
-          </div>
-        </div>
-
-        <div class="why-read-item d-flex align-items-start mb-4 p-4 bg-white rounded-4 shadow-sm"
-             style="transition: all 0.3s ease;">
-          <div class="icon-circle bg-success bg-opacity-10 text-success rounded-circle me-3 d-flex align-items-center justify-content-center"
-               style="width: 50px; height: 50px; font-size: 1.5em; box-shadow: 0 0 10px rgba(0,128,0,0.1);">
-            <i class="fas fa-seedling"></i>
-          </div>
-          <div>
-            <h5 class="fw-semibold mb-1 text-success">Hope Beyond Hardship</h5>
-            <p class="mb-0 text-secondary">
-              From despair to fatherhood’s joy — this book shows how meaning and happiness 
-              can blossom even in the darkest moments.
-            </p>
-          </div>
-        </div>
-   
-  </div>
-</section>
-
-
-
-
-<!-- Book Availability Section -->
-<section id="book-available" class="py-5" style="background: linear-gradient(135deg, #fff8f0, #ffffff);">
-  <div class="container text-center">
-
-    <!-- Heading -->
-    <h2 class="fw-bold mb-3" style="font-size: 2.3rem; color: #ff8800;">Book Available On</h2>
-    <p class="text-muted mb-5 fs-5">Grab your copy from trusted online stores below</p>
-
-    <!-- Platforms -->
-    <div class="d-flex flex-wrap justify-content-center align-items-stretch gap-5">
-
-      <!-- Amazon -->
-      <a href="https://www.amazon.in/dp/9370188665" target="_blank" class="platform-link text-decoration-none">
-        <div class="card border-0 shadow-lg p-4 rounded-4 bg-white platform-card">
-          <img src="YogeshUncle/amazon-logo-amazon-icon-free-free-vector.jpg" 
-               alt="Amazon" 
-               class="img-fluid mx-auto d-block mb-3" 
-               style="max-height: 90px; object-fit: contain;">
-          <h5 class="fw-semibold text-dark mb-2">Amazon</h5>
-          <p class="text-secondary small mb-3">Your trusted global bookstore</p>
-          <button class="btn btn-warning fw-semibold px-4 py-2 rounded-pill shadow-sm">
-            Buy from Amazon
-          </button>
-        </div>
-      </a>
-
-      <!-- Flipkart -->
-      <a href="https://www.flipkart.com/product/p/itme?pid=9789370188662" target="_blank" class="platform-link text-decoration-none">
-        <div class="card border-0 shadow-lg p-4 rounded-4 bg-white platform-card">
-          <img src="YogeshUncle/hd-flipkart-round-logo-icon-transparent-png-701751694966204grvmunpzzf-removebg-preview.png" 
-               alt="Flipkart" 
-               class="img-fluid mx-auto d-block mb-3" 
-               style="max-height: 90px; object-fit: contain;">
-          <h5 class="fw-semibold text-dark mb-2">Flipkart</h5>
-          <p class="text-secondary small mb-3">India’s favorite shopping platform</p>
-          <button class="btn btn-primary fw-semibold px-4 py-2 rounded-pill shadow-sm">
-            Buy from Flipkart
-          </button>
-        </div>
-      </a>
-
-      <!-- BlueRose -->
-      <a href="https://bluerosepublishers.com/" target="_blank" class="platform-link text-decoration-none">
-        <div class="card border-0 shadow-lg p-4 rounded-4 bg-white platform-card">
-          <img src="YogeshUncle/bluerose_publishers_logo.jpg" 
-               alt="BlueRose" 
-               class="img-fluid mx-auto d-block mb-3" 
-               style="max-height: 90px; object-fit: contain;">
-          <h5 class="fw-semibold text-dark mb-2">BlueRose Publishers</h5>
-          <p class="text-secondary small mb-3">Official publishing partner</p>
-          <button class="btn btn-info fw-semibold px-4 py-2 rounded-pill shadow-sm text-white">
-            Buy from BlueRose
-          </button>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- What Readers Say Section -->
-<section id="readers" class="py-5" style="
-  background: linear-gradient(135deg, #e8f9f1 0%, #ffffff 100%);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap');
+
+
+
+
+/* ---------------------------------------------------- */
+/* NEW HEADER/NAVIGATION STYLES (Inline/Fixed Top Bar) */
+/* ---------------------------------------------------- */
+header {
+    width: 100%;
+    height: 80px; /* Fixed height for the navigation bar */
+    background: linear-gradient(90deg, #e8f5e9 0%, #ffffff 45%, #e3f2fd 100%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 20px;
+    position: fixed; /* Fixes the header to the top */
+    top: 0;
+    left: 0;
+    z-index: 1030; /* Above Bootstrap's navbar z-index */
+    display: flex;
+    align-items: center;
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px; /* Add padding for small screens */
+}
+
+header .logo h1 {
+    font-family: 'Poppins', sans-serif; /* Use Poppins for a cleaner look */
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+    color: #222; /* Dark color for the logo text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav li a:hover, nav li a.active {
+    color: #ff8800; /* Use primary color for hover/active */
+}
+
+
+.nav-list .nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color:#4CAF50;
+  transition: all 0.3s ease;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    display: none;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #0d6efd;
+  }
+}
+
+
+/* ---------------------------------------------------- */
+/* HERO SECTION (New full-image background) */
+/* ---------------------------------------------------- */
+.hero {
+    /* Use the same background image as the new UI */
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url("YogeshUncle/Untitled-design-10.png") center top / cover no-repeat;
+    height: 80vh;
+}
+
+.hero-content {
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+.hero-content .subtitle {
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero-content .description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Global Button Styles */
+.btn {
+    background: #4CAF50; /* Green color for the 'BUY BOOK NOW' button */
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn:hover {
+    background: #43A047; /* Slightly darker green on hover */
+    color: #fff;
+}
+
+
+/* ---------------------------------------------------- */
+/* REST OF THE SECTIONS (Maintained/Refined) */
+/* ---------------------------------------------------- */
+
+/* ... (Previous CSS code before .about-section) ... */
+
+/* ---------------------------------------------------- */
+/* ABOUT SECTION (Updated for two-column layout) */
+/* ---------------------------------------------------- */
+.about-section {
+    /* Changed to white background as seen in the image */
+    background: white; 
+    padding: 80px 20px;
+}
+
+.about-section .section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    /* Aligns left as seen in the image */
+    text-align: left; 
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.about-section p, .about-section li {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Author Image Styling */
+.author-image {
+    max-width: 100%;        /* responsive width */
+    max-height: 550px;      /* controls image height */
+    object-fit: contain;    /* show the full image */
+    border-radius: 0;       /* square/rectangular look */
+    box-shadow: none;       /* clean look */
+    margin-top: 20px;       /* spacing on small screens */
+    background: #000;       /* fills blank space (optional) */
+}
+
+
+/* Beliefs/Values List */
+.values-list {
+    margin-left: 20px;
+}
+.values-list li {
+    font-size: 1em;
+    padding: 3px 0;
+}
+
+/* Education List */
+.education {
+    /* Adds separation between sections */
+    margin-top: 30px; 
+    padding-left: 0;
+}
+.education li {
+    font-size: 1em;
+    padding: 3px 0;
+}
+
+/* RESPONSIVE adjustment for image on smaller screens */
+@media (max-width: 992px) {
+    /* Center image on smaller screens */
+    .col-lg-5 {
+        text-align: center;
+    }
+    .author-image {
+        max-width: 350px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+ .inspiration-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+
+   .inspiration-section {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #f7f9fc, #e3f2fd);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0d47a1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Intro Paragraph */
+  .intro-text {
+    font-size: 1.15rem;
+    color: #333;
+    max-width: 850px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+  }
+
+  /* Card Box */
+  .inspiration-content {
+    display: inline-block;
+    max-width: 650px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .inspiration-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  }
+
+  /* Heading above Image */
+  .person-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1565c0;
+  }
+
+  /* Image Styling */
+  .image-wrapper {
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+
+  .person-image {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+  }
+
+  .person-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Marathi Quote */
+  .quote-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #444;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+
+
+
+.quote-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .quote-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  }
+
+/* ... (Rest of CSS code after .about-section) ... */
+#about {
+  animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* BOOKS SECTION */
+.books-section {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #eaf3ff 0%, #fff9f9 100%);
+}
+
+.books-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6em;
+  color: #244b9b;
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+}
+
+/* Book Container */
+.book-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Book Card */
+.book-card {
+  background: #fff;
+  width: 95%;
+  max-width: 750px; /* Increased width for cleaner look */
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 40px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Book Image */
+.book-card img {
+  max-width: 420px; /* Increased image size */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 25px;
+  border-radius: 10px;
+  border: 6px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.book-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.book-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Description */
+.book-card p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.why-read-list {
+    max-width: 450px;
+    margin-top: 20px !important;
+    text-align: left;
+    margin: 0 auto;
+}
+.why-read-list li {
+    padding: 8px 0;
+    color: #444;
+}
+.why-read-list i {
+    color: #ff8800;
+    margin-right: 10px;
+}
+#why-read .why-read-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.book-card .quote {
+    font-size: 1.1em;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
+}
+.book-card:hover .book-cover {
+  transform: scale(1.03);
+}
+
+.btn:hover {
+  background-color: #1f3870 !important;
+  transform: translateY(-2px);
+}
+
+/* CONTACT */
+.contact-section {
+    background: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+/* ... (Rest of Contact styles from previous version) ... */
+.contact-section form {
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.contact-section input,
+.contact-section textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-section button {
+    background: #ff8800;
+    color: white;
+    border: none;
+    transition: background 0.3s;
+}
+.contact-section button:hover {
+    background: #e67600;
+}
+
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .about-section img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body { padding-top: 50px; }
+    header { height: 50px; }
+    .header-top { flex-direction: column; height: auto; }
+    header .logo h1 { font-size: 1em; }
+    nav ul { gap: 15px; }
+
+    .hero-content h2 { font-size: 3em; }
+    .hero-content .subtitle { font-size: 0.8em; letter-spacing: 1px; }
+
+    .about-section { padding: 40px 20px; }
+    .books-section { padding: 40px 10px; }
+    .book-card { padding: 20px; }
+}
+ #employer img:hover {
+    transform: scale(1.05);
+  }
+
+.platform-link:hover .card {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+/* BOOK AVAILABILITY SECTION STYLING */
+.platform-card {
+  width: 230px;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.platform-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff8800;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.platform-card img {
+  transition: transform 0.3s ease;
+}
+
+.platform-card:hover img {
+  transform: scale(1.05);
+}
+
+.platform-card button {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.platform-card button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .platform-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* COMING SOON SECTION */
+.coming-soon-section {
+  background: linear-gradient(135deg, #fff7ec, #ffffff);
   position: relative;
   overflow: hidden;
-">
-  <div class="container position-relative" style="z-index: 2;">
+}
 
-    <!-- Heading -->
-    <h2 class="text-center fw-bold mb-3" 
-        style="color: #1e774c; font-family: 'Poppins', sans-serif; font-size: 2.4rem;">
-      What Readers Say
-    </h2>
-    <p class="text-center text-muted mb-5 fs-5">
-      Real experiences from our wonderful readers — and yours could be next!
-    </p>
+.coming-soon-section .container {
+  animation: fadeInUp 1.5s ease;
+}
 
-    <!-- Testimonials -->
-    <div class="row justify-content-center mb-5 g-4" id="testimonialList">
-      
-      <div class="col-md-4">
-        <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
-             style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-          <p class="text-muted fst-italic mb-3">
-            “A heart-touching book that reminds us what truly matters in life. Simple yet powerful.”
-          </p>
-          <div class="stars text-warning mb-2">★★★★★</div>
-          <h6 class="fw-bold text-success">— Priya Sharma</h6>
-        </div>
-      </div>
+.coming-soon-section .coming-image img {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
 
-      <div class="col-md-4">
-        <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
-             style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-          <p class="text-muted fst-italic mb-3">
-            “Beautifully written! I could relate to many emotions and lessons shared by the author.”
-          </p>
-          <div class="stars text-warning mb-2">★★★★★</div>
-          <h6 class="fw-bold text-success">— Rahul Verma</h6>
-        </div>
-      </div>
+.coming-soon-section .coming-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
-      <div class="col-md-4">
-        <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
-             style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-          <p class="text-muted fst-italic mb-3">
-            “Every page feels like a personal journey. Truly inspiring and soulful read.”
-          </p>
-          <div class="stars text-warning mb-2">★★★★★</div>
-          <h6 class="fw-bold text-success">— Neha Kapoor</h6>
-        </div>
-      </div>
-    </div>
+.coming-shape {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 136, 0, 0.15);
+  border-radius: 50%;
+  z-index: 0;
+  animation: floatShape 6s ease-in-out infinite alternate;
+}
 
-    <!-- Review Form -->
-    <div class="review-form mx-auto p-5 rounded-4 shadow-lg bg-white bg-opacity-75"
-         style="max-width: 750px; backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,0.05);">
-      <h4 class="fw-bold text-center text-primary mb-4" style="font-family: 'Poppins', sans-serif;">
-        ✍️ Share Your Review
-      </h4>
+@keyframes floatShape {
+  from { transform: translateY(0px); }
+  to { transform: translateY(20px); }
+}
 
-      <form id="reviewForm">
-        <div class="mb-3">
-          <label for="name" class="form-label fw-semibold">Your Name</label>
-          <input type="text" class="form-control rounded-3" id="name" placeholder="Enter your name" required>
-        </div>
+@media (max-width: 768px) {
+  .coming-soon-section h2 {
+    font-size: 1.7rem;
+  }
+  .coming-soon-section .container {
+    padding: 2rem;
+  }
+}
 
-        <div class="mb-3">
-          <label for="email" class="form-label fw-semibold">Your Email</label>
-          <input type="email" class="form-control rounded-3" id="email" placeholder="Enter your email" required>
-        </div>
+/* --- BOOK SECTION --- */
+.book-cover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
 
-        <!-- Star Rating -->
-        <div class="mb-3">
-          <label class="form-label fw-semibold">Your Rating</label>
-          <div class="star-rating fs-3 text-warning">
-            <span class="star" data-value="1">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="5">&#9733;</span>
-          </div>
-          <input type="hidden" id="rating" name="rating" required>
-        </div>
+.book-bg-shape-1, .book-bg-shape-2 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(90px);
+  z-index: 0;
+}
 
-        <div class="mb-3">
-          <label for="message" class="form-label fw-semibold">Your Review</label>
-          <textarea class="form-control rounded-3" id="message" rows="4" placeholder="Write your review here..." required></textarea>
-        </div>
+.book-bg-shape-1 {
+  width: 300px;
+  height: 300px;
+  background: #a3d4ff;
+  top: -50px;
+  left: -80px;
+  animation: floatShape 7s ease-in-out infinite alternate;
+}
 
-        <div class="text-center">
-          <button type="submit" class="btn btn-success px-5 py-2 fw-semibold rounded-pill">
-            Submit Review
-          </button>
-        </div>
-      </form>
+.book-bg-shape-2 {
+  width: 350px;
+  height: 350px;
+  background: #ffd6ec;
+  bottom: -80px;
+  right: -80px;
+  animation: floatShape 9s ease-in-out infinite alternate;
+}
 
-      <p id="thankYouMessage" class="text-center text-success mt-3 fw-semibold" style="display:none;">
-        ✅ Thank you for sharing your review!
-      </p>
-    </div>
+@keyframes floatShape {
+  from { transform: translateY(0px); }
+  to { transform: translateY(20px); }
+}
 
-  </div>
-</section>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@media (max-width: 768px) {
+  .book-cover {
+    max-height: 420px !important;
+  }
+}
+/* --- CONTACT SECTION --- */
+.contact-section .contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
 
+.contact-bg-circle-1, .contact-bg-circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(90px);
+  z-index: 0;
+}
 
-<!-- Rock Section -->
-<section id="rock-section" class="rock-section text-center py-5" style="background: linear-gradient(135deg, #212121, #424242); color: white;">
-  <div class="container">
-    <h2 class="fw-bold mb-4" style="font-size: 2.5rem; letter-spacing: 1px;">
-      If you smell what the Rock is cooking?
-    </h2>
-    <a href="coming-soon.html" class="btn btn-lg btn-warning px-4 py-2 fw-bold rounded-pill shadow">
-      Click Here
-    </a>
-  </div>
-</section>
+.contact-bg-circle-1 {
+  width: 280px;
+  height: 280px;
+  background: #b0ffd1;
+  top: -50px;
+  left: -80px;
+  animation: floatUpDown 8s ease-in-out infinite alternate;
+}
 
+.contact-bg-circle-2 {
+  width: 300px;
+  height: 300px;
+  background: #b3e0ff;
+  bottom: -60px;
+  right: -60px;
+  animation: floatUpDown 10s ease-in-out infinite alternate;
+}
 
+@keyframes floatUpDown {
+  from { transform: translateY(0px); }
+  to { transform: translateY(25px); }
+}
 
-    
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
 
+/* --- CONTACT SECTION --- */
+.contact-section .contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+}
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section py-5" 
-         style="background: linear-gradient(135deg, #e8fff1 0%, #f4f9ff 100%); position: relative; overflow: hidden;">
+.contact-section .contact-card i {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
 
-  <!-- Decorative Floating Circles -->
-  <div class="contact-bg-circle-1"></div>
-  <div class="contact-bg-circle-2"></div>
+.contact-section .contact-card:hover i {
+  transform: scale(1.15);
+}
 
-  <div class="container position-relative text-center" style="z-index: 2;">
+.contact-bg-circle-1, .contact-bg-circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(90px);
+  z-index: 0;
+}
 
-    <!-- Heading -->
-    <h2 class="fw-bold mb-3" 
-        style="font-family: 'Poppins', sans-serif; color:#0d6832; font-size: 2.5rem; letter-spacing: 0.5px;">
-      Let’s Connect
-    </h2>
-    <p class="text-muted mb-5 fs-5">
-      I’d love to hear from you! Whether it’s for a collaboration, creative discussion, or just to say hello —  
-      feel free to connect with me directly.
-    </p>
+.contact-bg-circle-1 {
+  width: 280px;
+  height: 280px;
+  background: #b4ffce;
+  top: -50px;
+  left: -80px;
+  animation: floatUpDown 8s ease-in-out infinite alternate;
+}
 
-    <!-- Unified Contact Card -->
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <div class="card border-0 shadow-lg rounded-4 p-5 contact-card" 
-             style="background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); transition: all 0.4s ease;">
-          
-          <!-- Icons Row -->
-          <div class="d-flex justify-content-center align-items-center gap-5 mb-4">
-            <a href="https://www.linkedin.com/in/yogesh-patil-a28999286/" 
-               target="_blank" 
-               class="text-decoration-none text-primary d-flex flex-column align-items-center">
-              <i class="bi bi-linkedin" style="font-size: 3.5rem;"></i>
-              <span class="fw-semibold mt-2">LinkedIn</span>
-            </a>
+.contact-bg-circle-2 {
+  width: 320px;
+  height: 320px;
+  background: #b3e0ff;
+  bottom: -60px;
+  right: -60px;
+  animation: floatUpDown 10s ease-in-out infinite alternate;
+}
 
-            <a href="mailto:yogesh7921@gmail.com" 
-   class="text-decoration-none text-danger d-flex flex-column align-items-center">
-  <i class="bi bi-envelope-fill" style="font-size: 3.5rem;"></i>
-  <span class="fw-semibold mt-2">Email</span>
-</a>
+@keyframes floatUpDown {
+  from { transform: translateY(0px); }
+  to { transform: translateY(25px); }
+}
 
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
+/* --- CONTACT SECTION --- */
+.contact-section .contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+}
 
-          <p class="text-muted fs-5 mb-0">
-            Let’s build something meaningful together — your message or connection is always welcome!
-          </p>
-        </div>
-      </div>
-    </div>
+.contact-section .contact-card i {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
 
-  </div>
-</section>
+.contact-section .contact-card:hover i {
+  transform: scale(1.15);
+}
 
+.contact-bg-circle-1, .contact-bg-circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(90px);
+  z-index: 0;
+}
 
+.contact-bg-circle-1 {
+  width: 280px;
+  height: 280px;
+  background: #b4ffce;
+  top: -50px;
+  left: -80px;
+  animation: floatUpDown 8s ease-in-out infinite alternate;
+}
 
-   
-<!-- Footer Section -->
-<footer class="text-center text-white py-4" 
-        style="background: linear-gradient(135deg, #0a3d2e 0%, #0d6832 100%); position: relative; overflow: hidden; font-family: Verdana, Geneva, sans-serif;">
+.contact-bg-circle-2 {
+  width: 320px;
+  height: 320px;
+  background: #b3e0ff;
+  bottom: -60px;
+  right: -60px;
+  animation: floatUpDown 10s ease-in-out infinite alternate;
+}
 
-  <!-- Decorative Circles -->
-  <div style="position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
-  <div style="position: absolute; bottom: -50px; left: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
+@keyframes floatUpDown {
+  from { transform: translateY(0px); }
+  to { transform: translateY(25px); }
+}
 
-  <div class="container position-relative" style="z-index: 2;">
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
 
-    <!-- Name and Rights -->
-    <p class="mb-2" style="font-size: 1rem; letter-spacing: 0.5px;">
-      © 2025 <strong>Mr. Yogesh Bhila Patil</strong> — All Rights Reserved
-    </p>
+/* Floating Back to Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #0d6832, #16a34a);
+  color: white;
+  border: none;
+  display: none; /* hidden by default */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
 
-    <!-- Developer / Redeveloper Credit -->
-    <p class="mb-3 text-white-50" style="font-size: 0.95rem;">
-      Developed by <strong>BlueRose Publishers</strong><br>
-      Redeveloped and Updation by 
-      <a href="https://www.linkedin.com/in/drupad-dhamdhere/" target="_blank" 
-         class="text-decoration-none fw-semibold" 
-         style="color: #aef1c2; transition: color 0.3s;">
-         Drupad Dhamdhere
-      </a>
-    </p>
+#backToTopBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+/* Floating Back to Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #0d6832, #16a34a);
+  color: white;
+  border: none;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  font-size: 2.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
 
-  </div>
-</footer>
+/* Hover Effect */
+#backToTopBtn:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
 
+/* Arrow Icon Styling */
+#backToTopBtn i {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.slideshow-container {
+  position: relative;
+}
 
+.mySlides {
+  display: none;
+}
 
+img {
+  vertical-align: middle;
+}
 
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 
+.carousel-track {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+.carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.6s ease-in-out;
+}
 
-    <script src="js/script.js"></script>
+.carousel-track img.active {
+  transform: scale(1.03);
+}
 
+/* Navigation Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
 
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+  transform: translateY(-50%) scale(1.1);
+}
 
-<!-- Floating Back to Top Button -->
-<button onclick="scrollToTop()" id="backToTopBtn" 
-        class="btn shadow-lg rounded-circle">
-  <i class="bi bi-arrow-up-short"></i>
-</button>
+.prev { left: 20px; }
+.next { right: 20px; }
 
-<script>
-  const topBtn = document.getElementById("backToTopBtn");
+/* Dots */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
 
-  window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      topBtn.style.display = "block";
-    } else {
-      topBtn.style.display = "none";
+.active, .dot:hover {
+  background-color: #b88a44;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-btn {
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
+ header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-list li a:hover {
+    color: #198754; /* Bootstrap green */
+  }
+
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
     }
-  };
 
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    .logo {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    #date-time {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    nav ul {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
-</script>
 
-
-<script>
-let currentIndex = 0;
-const slides = document.querySelectorAll(".carousel-track img");
-const track = document.querySelector(".carousel-track");
-const dots = document.querySelectorAll(".dot");
-
-function updateCarousel() {
-  track.style.transform = `translateX(-${currentIndex * 100}%)`;
-  slides.forEach(img => img.classList.remove("active"));
-  slides[currentIndex].classList.add("active");
-  dots.forEach(dot => dot.classList.remove("active"));
-  dots[currentIndex].classList.add("active");
+#readers .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateCarousel();
+.star-rating .star {
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateCarousel();
+.star-rating .star:hover {
+  transform: scale(1.2);
 }
 
-function moveToSlide(index) {
-  currentIndex = index;
-  updateCarousel();
+#reviewForm input, #reviewForm textarea {
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
 }
 
-document.querySelector(".next").addEventListener("click", nextSlide);
-document.querySelector(".prev").addEventListener("click", prevSlide);
+#reviewForm input:focus, #reviewForm textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76,175,80,0.2);
+}
+html {
+  scroll-behavior: smooth; /* smooth scrolling effect */
+}
 
-// Auto-slide every 3 seconds
-let slideInterval = setInterval(nextSlide, 3000);
-
-// Pause when hovering
-const carousel = document.querySelector(".carousel-wrapper");
-carousel.addEventListener("mouseenter", () => clearInterval(slideInterval));
-carousel.addEventListener("mouseleave", () => slideInterval = setInterval(nextSlide, 3000));
-
-updateCarousel();
-</script>
-
-<!-- LIVE DATE & TIME SCRIPT -->
-<script>
-  function updateDateTime() {
-    const now = new Date();
-    const options = { 
-      weekday: 'short', 
-      year: 'numeric', 
-      month: 'short', 
-      day: 'numeric', 
-      hour: '2-digit', 
-      minute: '2-digit', 
-      second: '2-digit' 
-    };
-    document.getElementById('date-time').textContent = now.toLocaleString('en-IN', options);
+section {
+  scroll-margin-top: 80px; /* adjust based on navbar height */
+}
+/* Your desktop styles */
+  #home {
+    background-size: cover;
+    background-position: center top;
   }
-  updateDateTime();
-  setInterval(updateDateTime, 1000); // updates every second
-</script>
 
+  /* Mobile override – must come last */
+  @media (max-width: 768px) {
+    #home {
+      min-height: auto !important;   /* auto height instead of 100vh */
+      background-size: contain !important;
+      background-position: top center !important;
+      background-repeat: no-repeat !important;
+      padding: 80px 15px !important;
+    }
+  }
 
-<!-- JS for star rating + live reviews -->
-<script>
-  const stars = document.querySelectorAll('.star');
-  const ratingInput = document.getElementById('rating');
-  const form = document.getElementById('reviewForm');
-  const thankYou = document.getElementById('thankYouMessage');
-  const testimonialList = document.getElementById('testimonialList');
+  #home .hero-content {
+    padding: 15px !important;
+    text-align: center;
+  }
 
-  // Star Rating
-  stars.forEach(star => {
-    star.addEventListener('click', () => {
-      const rating = star.getAttribute('data-value');
-      ratingInput.value = rating;
+  #home .subtitle {
+    font-size: 0.85rem !important;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
 
-      stars.forEach(s => s.style.color = '#ccc');
-      for (let i = 0; i < rating; i++) {
-        stars[i].style.color = '#ffc107';
-      }
-    });
-  });
+  #home h2 {
+    font-size: 1.9rem !important;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
 
-  // Form submission
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get values
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
-    const rating = document.getElementById('rating').value;
+  #home .description {
+    font-size: 0.9rem !important;
+    max-width: 90%;
+    margin: 0 auto 20px;
+  }
 
-    if(!rating) return alert("Please select a rating!");
-
-    // Create new testimonial card
-    const col = document.createElement('div');
-    col.className = 'col-md-4';
-    col.innerHTML = `
-      <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
-           style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-        <p class="text-muted fst-italic mb-3">“${message}”</p>
-        <div class="stars text-warning mb-2">${'★'.repeat(rating)}${'☆'.repeat(5-rating)}</div>
-        <h6 class="fw-bold text-success">— ${name}</h6>
-      </div>
-    `;
-
-    testimonialList.appendChild(col);
-
-    // Show thank you message
-    thankYou.style.display = 'block';
-
-    // Reset form
-    form.reset();
-    stars.forEach(s => s.style.color = '#ccc');
-  });
-</script>
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
- 
-
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav-link");
-    const navbarCollapse = document.getElementById("navbarNav");
-
-    navLinks.forEach(function (link) {
-      link.addEventListener("click", function () {
-        // Check if collapse is open
-        if (navbarCollapse.classList.contains("show")) {
-          new bootstrap.Collapse(navbarCollapse).toggle();
-        }
-      });
-    });
-  });
-</script>
-
-
-</body>
-</html>
+  #home a.btn {
+    font-size: 1rem !important;
+    padding: 12px 30px !important;
+    border-radius: 40px !important;
+  }
