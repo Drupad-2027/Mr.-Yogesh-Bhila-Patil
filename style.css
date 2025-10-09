@@ -1013,82 +1013,26 @@ html {
 section {
   scroll-margin-top: 80px; /* adjust based on navbar height */
 }
-/* === Desktop / Default Styles === */
-#home {
-  background-image: url('YogeshUncle/India%20Map_Final.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  font-family: Verdana, Geneva, sans-serif;
-  position: relative;
-  padding: 120px 20px;
-}
-
-/* Overlay for text contrast */
-#home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-}
-
-/* Content styling */
-#home .hero-content {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-/* Typography */
-#home .subtitle {
-  font-size: 1rem;
-  line-height: 1.6;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-#home h2 {
-  font-size: 2.3rem;
-  line-height: 1.3;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-#home .description {
-  font-size: 1rem;
-  max-width: 650px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
-}
-
-#home a.btn {
-  font-size: 1rem;
-  padding: 12px 36px;
-  border-radius: 40px;
-  background: #28a745;
-  color: #fff;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-}
-
-/* === Mobile Override === */
-@media (max-width: 768px) {
+/* Your desktop styles */
   #home {
-    min-height: auto !important;    /* Prevent image stretching */
-    background-size: contain !important;
-    background-position: top center !important;
-    background-repeat: no-repeat !important;
-    padding: 80px 15px !important;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  /* Mobile override – must come last */
+  @media (max-width: 768px) {
+    #home {
+      min-height: auto !important;   /* auto height instead of 100vh */
+      background-size: contain !important;
+      background-position: top center !important;
+      background-repeat: no-repeat !important;
+      padding: 80px 15px !important;
+    }
+  }
+
+  #home .hero-content {
+    padding: 15px !important;
+    text-align: center;
   }
 
   #home .subtitle {
@@ -1110,15 +1054,7 @@ section {
   }
 
   #home a.btn {
-    font-size: 0.95rem !important;
-    padding: 12px 28px !important;
+    font-size: 1rem !important;
+    padding: 12px 30px !important;
     border-radius: 40px !important;
   }
-
-  /* Optional: subtle background fade for text readability */
-  #home .hero-content {
-    background: rgba(252, 249, 249, 0.852);
-    border-radius: 10px;
-  }
-}
-
