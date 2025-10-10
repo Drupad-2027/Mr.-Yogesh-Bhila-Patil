@@ -78,6 +78,7 @@
            style="letter-spacing:2px; font-size:1rem; line-height:1.6; animation:fadeInDown 1s;">
           IF THIS BOOK TOUCHES EVEN ONE LIFE, THEN EVERY STRUGGLE HAS FOUND ITS MEANING
         </p>
+
         <!-- CTA Button -->
         <a href="#book-available" class="btn shadow-lg fw-bold" 
            style="border-radius:50px; background:#28a745; color:#fff; font-size:1rem;
@@ -465,11 +466,11 @@
       </p>
 
       <!-- Quote Highlight -->
-      <blockquote class="quote border-start border-4 border-primary ps-4 mt-4 text-start mx-auto"
-                  style="color:#222; font-size: 1.6em; max-width: 700px; font-family: Verdana, Geneva, sans-serif;">
-        “If you ever find yourself wondering, <strong>‘When I was me?’</strong>  
-                         Know that you are not alone!"
-      </blockquote>
+<blockquote class="quote border-start border-4 border-primary ps-4 mt-4 text-start mx-auto"
+            style="color:#222; font-size: 1.6em; max-width: 700px; font-family: 'Great Vibes', cursive;">
+  “If you ever find yourself wondering, <strong>‘When I was me?’</strong>  
+  know that you are not alone!”
+</blockquote>
 
       <!-- Book Details Row -->
       <div class="row text-center mt-5" style="font-family: inherit;">
@@ -644,45 +645,57 @@
         style="color: #1e774c; font-family: 'Poppins', sans-serif; font-size: 2.4rem;">
       What Readers Say
     </h2>
-    <p class="text-center text-muted mb-5 fs-5">
-      Real experiences from our wonderful readers — and yours could be next!
-    </p>
 
     <!-- Testimonials -->
     <div class="row justify-content-center mb-5 g-4" id="testimonialList">
-      
+
       <div class="col-md-4">
         <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
              style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
           <p class="text-muted fst-italic mb-3">
-            “A heart-touching book that reminds us what truly matters in life. Simple yet powerful.”
+              <div class="stars text-warning mb-2">★★★★★</div>
+            This book stands out because of its clarity and depth. The author has explained complex thoughts in such a relatable manner. I thoroughly enjoyed reading it and will definitely be revisiting some chapters again.
           </p>
-          <div class="stars text-warning mb-2">★★★★★</div>
+        
+          <h6 class="fw-bold text-success">— Ananya Iyer</h6>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
+             style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
+          <p class="text-muted fst-italic mb-3">
+             <div class="stars text-warning mb-2">★★★★</div>
+            The book beautifully captures emotions and ideas that stay with you long after finishing it. I especially liked the way real-life experiences are woven into the narrative. Highly recommended for readers who enjoy meaningful stories.
+          </p>
+          <h6 class="fw-bold text-success">— Rohan Mehta</h6>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
+             style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
+          <p class="text-muted fst-italic mb-3">
+            <div class="stars text-warning mb-2">★★★★★</div>
+            An engaging and insightful read! The author’s writing style is simple yet impactful, making it easy to connect with the message. I could relate to many parts, and it truly left me inspired. A must-read for anyone looking for fresh perspectives.
+          
           <h6 class="fw-bold text-success">— Priya Sharma</h6>
         </div>
       </div>
+  
 
-      <div class="col-md-4">
+
+    <div class="col-md-4">
         <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
              style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
           <p class="text-muted fst-italic mb-3">
-            “Beautifully written! I could relate to many emotions and lessons shared by the author.”
+            <div class="stars text-warning mb-2">★★★★★</div>
+           “When I Was Me?” is an inspiring and heartfelt journey that beautifully blends honesty with hope. The author has narrated real-life struggles with remarkable simplicity, making the book deeply relatable and easy to connect with. What stood out to me is the clarity of thought and the courage to speak about challenges that are often left unspoken. The balance between personal experiences and universal life lessons makes this book not only engaging but also transformational. It is a gentle reminder that resilience, acceptance, and moving forward are the true keys to living a meaningful life. A must-read for anyone seeking motivation and perspective in difficult times
           </p>
-          <div class="stars text-warning mb-2">★★★★★</div>
-          <h6 class="fw-bold text-success">— Rahul Verma</h6>
+          <h6 class="fw-bold text-success">— Drupad Dhamdhere</h6>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card border-0 shadow-lg rounded-4 p-4 h-100 text-center bg-white bg-opacity-75"
-             style="backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-          <p class="text-muted fst-italic mb-3">
-            “Every page feels like a personal journey. Truly inspiring and soulful read.”
-          </p>
-          <div class="stars text-warning mb-2">★★★★★</div>
-          <h6 class="fw-bold text-success">— Neha Kapoor</h6>
-        </div>
-      </div>
     </div>
 
     <!-- Review Form -->
@@ -692,41 +705,38 @@
         ✍️ Share Your Review
       </h4>
 
-      <form id="reviewForm">
-        <div class="mb-3">
-          <label for="name" class="form-label fw-semibold">Your Name</label>
-          <input type="text" class="form-control rounded-3" id="name" placeholder="Enter your name" required>
-        </div>
+    
+<form id="reviewForm" action="https://formspree.io/f/yourFormID" method="POST">
 
-        <div class="mb-3">
-          <label for="email" class="form-label fw-semibold">Your Email</label>
-          <input type="email" class="form-control rounded-3" id="email" placeholder="Enter your email" required>
-        </div>
+  <!-- Star Rating -->
+  <div class="mb-3">
+    <label class="form-label fw-semibold">Your Rating</label>
+    <div class="star-rating fs-3 text-warning">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <input type="hidden" id="rating" name="rating" required>
+  </div>
 
-        <!-- Star Rating -->
-        <div class="mb-3">
-          <label class="form-label fw-semibold">Your Rating</label>
-          <div class="star-rating fs-3 text-warning">
-            <span class="star" data-value="1">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="5">&#9733;</span>
-          </div>
-          <input type="hidden" id="rating" name="rating" required>
-        </div>
+  <div class="mb-3">
+    <label for="message" class="form-label fw-semibold">Your Review</label>
+    <textarea class="form-control rounded-3" id="message" name="message" rows="4" placeholder="Write your review here..." required></textarea>
+  </div>
 
-        <div class="mb-3">
-          <label for="message" class="form-label fw-semibold">Your Review</label>
-          <textarea class="form-control rounded-3" id="message" rows="4" placeholder="Write your review here..." required></textarea>
-        </div>
+  <div class="mb-3">
+    <label for="name" class="form-label fw-semibold">Your Name</label>
+    <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Enter your name" required>
+  </div>
 
-        <div class="text-center">
-          <button type="submit" class="btn btn-success px-5 py-2 fw-semibold rounded-pill">
-            Submit Review
-          </button>
-        </div>
-      </form>
+  <div class="text-center">
+    <button type="submit" class="btn btn-success px-5 py-2 fw-semibold rounded-pill">
+      Submit Review
+    </button>
+  </div>
+</form>
 
       <p id="thankYouMessage" class="text-center text-success mt-3 fw-semibold" style="display:none;">
         ✅ Thank you for sharing your review!
@@ -1023,4 +1033,3 @@ updateCarousel();
 
 </body>
 </html>
-
