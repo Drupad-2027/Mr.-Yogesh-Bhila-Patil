@@ -374,17 +374,19 @@
     <div class="inspiration-content container" style="position:relative; z-index:2; max-width:900px; animation: fadeIn 1.5s ease-out;">
 
         <!-- Heading -->
-        <h4 class="fw-bold mb-4" 
-            style="font-size:1.8rem; color:#28a745; letter-spacing:1px; text-transform:uppercase;">
-           ✨ Inspiration of Writing  
-        </h4>
+<h4 class="fw-bold mb-4 text-center" 
+    style="font-size:1.6rem; color:#28a745; letter-spacing:1px;">
+    <span style="color:black;">&#9835;</span> 
+    INSPIRATION of WRITING 
+    <span style="color:black;">&#9829;</span>
+</h4>
 
         <!-- English Text -->
         <p class="lead mb-4" 
            style="max-width:800px; font-size:1.05rem; line-height:1.8; margin:0 auto; color:#333;">
             Sometimes; you try to reach to somebody you  need the most; but fails...  
             then we must do something in such a way that  person will reach out to you,
-            to know you.<strong> Stop guessing !!</strong> My son <strong style="color:#28a745;">‘J’</strong> is one of those persons.
+            to know you.<strong> Stop guessing !!</strong> My son <strong style="color:#28a745;">‘J’</strong> is one of in those persons.
         </p>
 
         
@@ -422,7 +424,7 @@
     <h2 class="mb-5 fw-bold" 
         style="color:#244b9b; letter-spacing: 1px; font-size: 2.3rem; font-family: inherit;">
          <img src="YogeshUncle/BB.jpg" alt="Pen Icon" style="width: 75px; margin-right: 10px; vertical-align: middle;">
-            About the Book
+            About The Book
     </h2>
 
     <!-- Book Card -->
@@ -465,12 +467,13 @@
         Also; this book is full of knowledge and information.
       </p>
 
-      <!-- Quote Highlight -->
+     <!-- Quote Highlight -->
 <blockquote class="quote border-start border-4 border-primary ps-4 mt-4 text-start mx-auto"
-            style="color:#222; font-size: 1.6em; max-width: 700px; font-family: 'Great Vibes', cursive;">
+            style="color:#222; font-size: 1.3em; max-width: 700px; font-family: Verdana, sans-serif;">
   “If you ever find yourself wondering, <strong>‘When I was me?’</strong>  
   know that you are not alone!”
 </blockquote>
+
 
       <!-- Book Details Row -->
       <div class="row text-center mt-5" style="font-family: inherit;">
@@ -706,7 +709,7 @@
       </h4>
 
     
-<form id="reviewForm" action="https://formspree.io/f/yourFormID" method="POST">
+<form id="reviewForm" action="https://formspree.io/f/xwprrqwo" method="POST">
 
   <!-- Star Rating -->
   <div class="mb-3">
@@ -1029,6 +1032,32 @@ updateCarousel();
     });
   });
 </script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll(".star-rating .star");
+    const ratingInput = document.getElementById("rating");
+
+    stars.forEach((star, index) => {
+      star.addEventListener("click", () => {
+        const value = star.getAttribute("data-value");
+        ratingInput.value = value; // update hidden input
+
+        // Highlight stars up to the clicked one
+        stars.forEach((s, i) => {
+          if (i < value) {
+            s.classList.add("text-warning");
+          } else {
+            s.classList.remove("text-warning");
+          }
+        });
+      });
+    });
+  });
+</script>
+
 
 
 </body>
