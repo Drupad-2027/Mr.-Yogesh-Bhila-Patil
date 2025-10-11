@@ -44,74 +44,73 @@ It showcases the author’s biography, book details, testimonials, and contact f
 Follow these steps to use or modify this project on your own system:
 
 ### 1️⃣ Clone the Repository
-```bash
 git clone https://github.com/drupad-2027/Mr.-Yogesh-Bhila-Patil.git
 
-2️⃣ Navigate to the Project Folder
+
+### 2️⃣ Navigate to the Project Folder
 cd Mr.-Yogesh-Bhila-Patil
 
-3️⃣ Open in Your Browser
+### 3️⃣ Open in Your Browser
 
 You can directly open the index.html file:
-start index.html        # Windows
-open index.html         # macOS
-xdg-open index.html     # Linux
+
+#### Windows
+start index.html  
+#### macOS
+open index.html
+#### Linux
+xdg-open index.html 
 
 
-🧠 How to Use / Customize
-
+### 🧠 How to Use / Customize
 If you want to use this as a template for your own author portfolio, follow these steps:
 
-Replace author details inside index.html under the About the Author section.
+1. Replace author details inside index.html under the About the Author section.
 
-Update your book title, description, and purchase links.
+2. Update your book title, description, and purchase links.
 
-Edit the Formspree form endpoint in the <form> tag if you want reviews to go to your email.
-<form action="https://formspree.io/f/your-form-id" method="POST">
+3. Edit the Formspree form endpoint in the form tag if you want reviews to go to your email
+  
+4. Customize color themes or typography in style.css to match your branding.
 
-Customize color themes or typography in style.css to match your branding.
+5. (Optional) Add new sections like upcoming books, blog posts, or gallery.
 
-(Optional) Add new sections like upcoming books, blog posts, or gallery.
-
-📸 Preview
+### 📸 Preview
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c18055f3-0400-457c-b2bd-a243e025d2dd" />
-🌈 Deployment
+
+### 🌈 Deployment
 
 The website is hosted using GitHub Pages.
 
 To deploy your own version:
 
-Push your code to a GitHub repository.
+1. Push your code to a GitHub repository.
 
-Go to Settings → Pages → Branch: main → Folder: / (root) → Save.
+2. Go to Settings → Pages → Branch: main → Folder: / (root) → Save.
 
-Your site will be live at:
-https://<your-username>.github.io/<repository-name>/
+3. Your site will be live.
 
 
-🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
 If you’d like to improve the design or add features:
 
-Fork this repository
+1. Fork this repository
 
-Create a new branch
+2. Create a new branch
 git checkout -b feature/your-feature
 
-Commit and push changes
+3. Commit and push changes
 
-Open a Pull Request
+4. Open a Pull Request
 
-📬 Contact
+### 📬Contact
 
-📧 Author: Mr. Yogesh Bhila Patil
-🌐 Website: https://drupad-2027.github.io/Mr.-Yogesh-Bhila-Patil/
+**📧Author:** Mr. Yogesh Bhila Patil
 
-🧑‍💻 Developed by: Drupad Dhamdhere
+**🌐 Website:**  https://drupad-2027.github.io/Mr.-Yogesh-Bhila-Patil/
 
-⭐ If you like this project, give it a star on GitHub!
+**Developed by**: Drupad Dhamdhere
 
-
-```bash
-git clone https://github.com/drupad-2027/Mr.-Yogesh-Bhila-Patil.git
