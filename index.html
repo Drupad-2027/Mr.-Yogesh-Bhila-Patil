@@ -706,15 +706,7 @@
 
     </div>
 
-    <!-- Review Form -->
-    <div class="review-form mx-auto p-5 rounded-4 shadow-lg bg-white bg-opacity-75"
-         style="max-width: 750px; backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,0.05);">
-      <h4 class="fw-bold text-center text-primary mb-4" style="font-family: 'Poppins', sans-serif;">
-        ✍️ Share Your Review
-      </h4>
-
-    
-<form id="reviewForm" action="https://formspree.io/f/xwprrqwo" method="POST">
+  <form id="reviewForm" action="https://formspree.io/f/xwprrqwo" method="POST">
 
   <!-- Star Rating -->
   <div class="mb-3">
@@ -731,13 +723,18 @@
 
   <div class="mb-3">
     <label for="message" class="form-label fw-semibold">Your Review</label>
-    <textarea class="form-control rounded-3" id="message" name="message" rows="4" placeholder="Write your review here..." required></textarea>
+    <textarea class="form-control rounded-3" id="message" name="message" rows="4" required></textarea>
   </div>
 
   <div class="mb-3">
     <label for="name" class="form-label fw-semibold">Your Name</label>
-    <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Enter your name" required>
+    <input type="text" class="form-control rounded-3" id="name" name="name" required>
   </div>
+
+  <div class="mb-3">
+  <label for="email" class="form-label fw-semibold">Your Email</label>
+  <input type="email" class="form-control rounded-3" id="email" name="_replyto" required>
+</div>
 
   <div class="text-center">
     <button type="submit" class="btn btn-success px-5 py-2 fw-semibold rounded-pill">
@@ -745,6 +742,7 @@
     </button>
   </div>
 </form>
+
 
       <p id="thankYouMessage" class="text-center text-success mt-3 fw-semibold" style="display:none;">
         ✅ Thank you for sharing your review!
