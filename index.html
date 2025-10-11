@@ -705,8 +705,13 @@
       </div>
 
     </div>
+<form id="reviewForm"  action="https://formspree.io/f/xwprrqwo" method="POST">
 
-  <form id="reviewForm" action="https://formspree.io/f/xwprrqwo" method="POST">
+  <!-- Hidden field to set subject -->
+  <input type="hidden" name="_subject" value="New Review Submitted">
+
+  <!-- Hidden field to set recipient -->
+  <input type="hidden" name="_to" value="yogesh7921@gmail.com">
 
   <!-- Star Rating -->
   <div class="mb-3">
@@ -732,9 +737,9 @@
   </div>
 
   <div class="mb-3">
-  <label for="email" class="form-label fw-semibold">Your Email</label>
-  <input type="email" class="form-control rounded-3" id="email" name="_replyto" required>
-</div>
+    <label for="email" class="form-label fw-semibold">Your Email</label>
+    <input type="email" class="form-control rounded-3" id="email" name="_replyto" required>
+  </div>
 
   <div class="text-center">
     <button type="submit" class="btn btn-success px-5 py-2 fw-semibold rounded-pill">
@@ -743,12 +748,9 @@
   </div>
 </form>
 
-
-      <p id="thankYouMessage" class="text-center text-success mt-3 fw-semibold" style="display:none;">
-        ✅ Thank you for sharing your review!
-      </p>
-    </div>
-
+<p id="thankYouMessage" class="text-center text-success mt-3 fw-semibold" style="display:none;">
+  ✅ Thank you for sharing your review!
+</p>
   </div>
 </section>
 
@@ -1061,7 +1063,31 @@ updateCarousel();
   });
 </script>
 
+<script>
+document.getElementById("reviewForm").addEventListener("submit", async function(event) {
+  event.preventDefault();
 
+  const form = event.target;
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch("https://formspree.io/f/xwprrqwo", {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      form.reset();
+      document.getElementById("thankYouMessage").style.display = "block";
+    } else {
+      alert("There was a problem submitting your review. Please try again.");
+    }
+  } catch (error) {
+    alert("Error: " + error.message);
+  }
+});
+</script>
 
 </body>
 </html>
